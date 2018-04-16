@@ -19,19 +19,18 @@ bool is_even(int n) {
 
 long long int sum_even_fib(int n) {
     long long int a, b, tmp;
-    int i;
     a = 1;
     b = 1;
     long long int runsum = 0;
-    for (i = 3; b <= n; i++) {
-	tmp = b;                
-	b = a + b;
+    for (size_t i = 3; b <= n; i++) {
+        tmp = b;
+        b = a + b;
 
-	std::swap(a, tmp);
-	if (is_even(b)) {
-	    //std::cout << runsum << std::endl;
-	    runsum += b;
-	}
+    	std::swap(a, tmp);
+    	if (is_even(b)) {
+    	    //std::cout << runsum << std::endl;
+    	    runsum += b;
+    	}
     }
     return runsum;
 }
@@ -55,4 +54,3 @@ int main() {
     std::cout << res << std::endl;
     std::cout << "Total running time: "<< static_cast<float>(runtime)/CLOCKS_PER_SEC << " seconds" << std::endl;
 }
-
