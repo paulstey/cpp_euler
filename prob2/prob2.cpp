@@ -4,9 +4,9 @@
 // Author: Paul Stey
 // Date: 2017-03-25
 
-#include<iostream>
-#include<algorithm>    // std::swap()
-#include<ctime>
+#include <iostream>
+#include <algorithm>    // std::swap()
+#include <ctime>
 
 bool is_even(int n) {
     bool res = false;
