@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 
 // Project Euler: Problem 1
 // Take sum of all integers that are multiples of 3 or 5
@@ -6,35 +6,18 @@
 // Author: Paul Stey
 // Compile with: g++ proj_euler1.cpp -Wall -o prob1
 
-bool is_case(int n) {
-    bool res = false;
-    
-    if (n % 3 == 0) {
-	res = true;
-    }
-    else if (n % 5 == 0) {
-	res = true;
-    }
-    return res;
-}
-
-
-int get_maxval() {
-    int res;
-    std::cout << "Enter maxval: " << std::endl;
-    std::cin >> res;
-    return res;
-}
+#include <iostream>
+#include "utils.h"
 
 
 int main() {
     int res = 0;
     int maxval = get_maxval();
-	
+
     for (int i = 3; i < maxval; ++i) {
-	if (is_case(i)) {
-	    res += i;
-	}
+    	if (is_case(i)) {
+    	    res += i;
+    	}
     }
     std::cout << "Solution: " << res << std::endl;
 }
