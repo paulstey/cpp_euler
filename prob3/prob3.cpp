@@ -10,7 +10,7 @@ const uint64_t TARGET = 600851475143;
 // const uint64_t TARGET = 13195;
 
 
-uint64_t max_prime_factor(std::vector<uint64_t> prime_vec, __int128 m) {
+uint64_t max_prime_factor(std::vector<uint64_t> prime_vec, uint64_t m) {
     int n = prime_vec.size() - 1;
 
     uint64_t res = 1;

@@ -1,5 +1,5 @@
 CC = g++
-CFLAGS = -Wall -pedantic -std=c++11 -I.
+CFLAGS = -Wall -pedantic -std=c++11
 DEPS = utils.h
 OBJ = prob3.o utils.o
 
