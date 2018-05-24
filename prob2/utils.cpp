@@ -1,5 +1,6 @@
 #include <algorithm>
 #include <iostream>
+#include <cstdint>
 
 bool is_even(int n) {
     bool res = false;
@@ -10,13 +11,13 @@ bool is_even(int n) {
 }
 
 
-long long sum_even_fib(int n) {
-    long long a;
-    long long b;
-    long long tmp;
+uint64_t sum_even_fib(int n) {
+    uint64_t a;
+    uint64_t b;
+    uint64_t tmp;
     a = 1;
     b = 1;
-    long long runsum = 0;
+    uint64_t runsum = 0;
     for (size_t i = 3; b <= n; i++) {
         tmp = b;
         b = a + b;
