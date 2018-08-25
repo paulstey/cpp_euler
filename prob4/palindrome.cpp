@@ -1,18 +1,14 @@
 #include <string>
 
 bool is_palindrome(std::string s) {
-    uint64_t n = static_cast<uint64_t>(s.size())
-    uint64_t i = 0;
-    bool persist = true;
-    bool res = false;
-    while (persist) {
-        persist = s[i] == s[n];
-        if (persist && i == j) {
-            res = true;
-            break
+    size_t j = static_cast<size_t>(s.size()) - 1;
+    bool res = true;
+    for (size_t i = 0; i <= j; i++) {
+        if (s[i] != s[j]) {
+            res = false;
+            break;
         }
-        i++;
-        n--;
+        j--;
     }
     return res;
 }
