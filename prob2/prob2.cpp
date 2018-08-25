@@ -8,6 +8,7 @@
 #include <algorithm>    // std::swap()
 #include <ctime>
 #include <cstdint>
+#include <iomanip>      // std::fixed and std::setprecision()
 
 #include "utils.h"
 
@@ -20,5 +21,5 @@ int main() {
     clock_t runtime = clock() - t0;
 
     std::cout << res << std::endl;
-    std::cout << "Total running time: "<< static_cast<float>(runtime)/CLOCKS_PER_SEC << " seconds" << std::endl;
+    std::cout << "Total running time: "<< std::fixed << std::setprecision(6) << static_cast<double>(runtime)/CLOCKS_PER_SEC << " seconds" << std::endl;
 }
