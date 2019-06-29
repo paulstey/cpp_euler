@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.14.3 FATAL_ERROR)
 
-project(prob1 LANGUAGES CXX)
+project(prob2 LANGUAGES CXX)
 
 add_library(utils 
     STATIC
