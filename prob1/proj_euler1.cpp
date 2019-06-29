@@ -1,10 +1,7 @@
-#include <iostream>
-
 // Project Euler: Problem 1
 // Take sum of all integers that are multiples of 3 or 5
 // Date: 2017-03-11
 // Author: Paul Stey
-// Compile with: g++ proj_euler1.cpp -Wall -o prob1
 
 #include <iostream>
 #include "utils.h"
