@@ -4,7 +4,7 @@
 #include <vector>
 #include <ctime>
 
-#include "utils.h"
+#include "primes.h"
 
 const uint64_t TARGET = 600851475143;
 // const uint64_t TARGET = 13195;
