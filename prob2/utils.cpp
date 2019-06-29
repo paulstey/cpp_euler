@@ -5,7 +5,7 @@
 bool is_even(int n) {
     bool res = false;
     if (n % 2 == 0) {
-	res = true;
+        res = true;
     }
     return res;
 }
@@ -24,7 +24,6 @@ uint64_t sum_even_fib(int n) {
 
     	std::swap(a, tmp);
     	if (is_even(b)) {
-    	    //std::cout << runsum << std::endl;
     	    runsum += b;
     	}
     }
