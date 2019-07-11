@@ -2,12 +2,12 @@ cmake_minimum_required(VERSION 3.14.3 FATAL_ERROR)
 
 project(prob5 LANGUAGES CXX)
 
-add_library(is_divisible 
+add_library(factors 
     STATIC
-    is_divisible.h
-    is_divisible.cpp
+    factors.h
+    factors.cpp
 )
 
 add_executable(prob5 prob5.cpp)
 
-target_link_libraries(prob5 is_divisible)
+target_link_libraries(prob5 factors)
