@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.14.3 FATAL_ERROR)
 
+set (CMAKE_CXX_FLAGS "-std=c++11")
+
 project(prob5 LANGUAGES CXX)
 
 add_library(factors 
