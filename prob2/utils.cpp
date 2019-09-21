@@ -12,11 +12,10 @@ bool is_even(int n) {
 
 
 uint64_t sum_even_fib(int n) {
-    uint64_t a;
-    uint64_t b;
+    uint64_t a = 1;
+    uint64_t b = 1;
     uint64_t tmp;
-    a = 1;
-    b = 1;
+    
     uint64_t runsum = 0;
     for (size_t i = 3; b <= n; i++) {
         tmp = b;
