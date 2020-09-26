@@ -1,4 +1,6 @@
 #include <vector>
+#include <cstdint>
+
 
 std::vector<uint64_t> primes(int n) {
     std::vector<bool> prime_flag (n+1, true);
